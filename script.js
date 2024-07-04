@@ -41,12 +41,17 @@ let currentTestimonialIndex = 0;
 const testimonialTextElement = document.getElementById('testimonial-text');
 const testimonialElement = document.getElementById('testimonial');
 
-function updateTestimonial() {
+function updateTestimonial() 
+{
+
     const testimonial = testimonials[currentTestimonialIndex];
     testimonialTextElement.innerHTML = `<strong>${testimonial.name}</strong> from <strong>${testimonial.country}</strong> (${testimonial.time}):<br>"${testimonial.text}"`;
+
 }
 
-function changeTestimonial(direction) {
+function changeTestimonial(direction) 
+{
+
     testimonialElement.style.opacity = '0';
     testimonialElement.style.transform = 'translateX(' + (direction === 'left' ? '-' : '') + '100px)';
     setTimeout(() => {
@@ -55,11 +60,14 @@ function changeTestimonial(direction) {
         testimonialElement.style.transform = 'translateX(0)';
         testimonialElement.style.opacity = '1';
     }, 500);
+
 }
 
-document.getElementById('left-button').addEventListener('click', () => {
+document.getElementById('left-button').addEventListener('click', 
+    () => {
     changeTestimonial('left');
-});
+}
+);
 
 document.getElementById('right-button').addEventListener('click', () => {
     changeTestimonial('right');
@@ -70,12 +78,18 @@ updateTestimonial();
 let lastScrollTop = 0;
 const header = document.querySelector('header');
 
+
 window.addEventListener('scroll', () => {
+
     const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
     if (scrollTop > lastScrollTop) {
         header.classList.add('sticky-header-hidden');
-    } else {
+    } 
+    
+    else {
         header.classList.remove('sticky-header-hidden');
     }
+    
     lastScrollTop = scrollTop;
 });
