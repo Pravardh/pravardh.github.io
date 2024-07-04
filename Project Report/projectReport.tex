@@ -1,0 +1,278 @@
+\documentclass[15pt]{report}
+\usepackage{hyperref}
+\renewcommand{\familydefault}{\sfdefault} 
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{listings}
+\usepackage{xcolor}
+
+\title{E-Portfolio Website Project Report}
+\author{Pravardh Phaniraj}
+
+\begin{document}
+
+\maketitle
+
+\tableofcontents
+
+\chapter{Introduction}
+\section{Overview}
+
+Every developer needs an online portfolio. CVs work of course, but having an e-portfolio, in my opinion, enhances a developer's profile more. It makes more sense because a programmer knows how to code.
+
+What better way to showcase their skills than to create their own portfolio, which creatively displays their knowledge?
+
+It is also important to note that an online portfolio can use multiple ways to create immersive and exciting experiences. There are many portfolios that I've researched, which have extremely beautifully crafted websites.
+
+Here are some examples:
+
+\begin{itemize}
+
+    \item \href{https://www.jameswilliams.design/}{https://www.jameswilliams.design/}
+ 
+    \item \href{https://www.bychristinakosik.com/}{https://www.bychristinakosik.com/}
+    
+    \item \href{https://www.alexbeigeweb.dev/}{https://www.alexbeigeweb.dev/}
+
+\end{itemize}
+
+\section{Purpose and Objectives}
+
+The main objectives of this portfolio project are:
+
+\begin{itemize}
+
+    \item To present a professional online portfolio.
+    \item To demonstrate my skills and projects, all in one page.
+    \item To serve as a platform for employers and collaborators to learn more about my work.
+
+\end{itemize}
+
+\chapter{Portfolio Structure}
+
+\section{Website Structure}
+
+The website is coded using HTML, CSS and Javascript. The files follow the classic naming convention. That means, the index page is simply called index.html, javascript file called script.js and the stylesheet called styles.css
+
+Following naming conventions is important, because that ensures others who take a look at the code can also follow along, and understand what each file does. For a simple project such as this, it might be okay to use different names like "mainpage.html", but imagine a website has 5-10 different pages. It would be difficult for other develoeprs to properly find out what's the difference between each page by just looking at it. That's why it's always better to follow naming conventions.
+
+This goes for the JavaScript file as well. It uses Camel Cases. This means the first letter of the variable would be small case, and the first letter of the second word (if it exists) in the variable would be of upper case. 
+
+For example:- 
+        int apple;
+        int fruitBasket;
+        
+
+\begin{itemize}
+
+    \item \textbf{Header}: Contains the site title, navigation links, and a profile picture.
+
+    \item \textbf{Main Content}: Divided into sections such as Education, Certifications, Work Experience, Projects, Skills, Testimonials, and Contact. This ensures the website is properly organized, and others can differentiate between what each section is. The contact form is the ensure people with queries can easily send me a message, instead of opening another website to write an email. 
+    
+    \item \textbf{Footer}: Includes contact information.
+    
+\end{itemize}
+
+\section{GitHub Repository Structure}
+
+Ensuring your project is properly organized is also extremely important. When working with big projects, it should be easy for you to find a particular folder or file. This would also be extremely useful when using terminals to traverse through your project. You will most likely not have a search feature at those times. So organizing your project will help you traverse through different files with ease. 
+
+\section{URL Links}
+\begin{itemize}
+
+    \item Portfolio Website: \href{https://pravardh.github.io/}{https://pravardh.github.io/}
+
+    
+    \item GitHub Repository: \href{https://github.com/Pravardh/pravardh.github.io}{https://github.com/Pravardh/pravardh.github.io}
+
+\end{itemize}
+
+\chapter{Design Decisions}
+
+\section{Why Design is important}
+
+The design of your portfolio is extremely important. Although having an extremely interactive and long portfolio would be impressive to others, it's also good to note that employers go through multiple portfolios and applications everyday. They most probably do not have enough time to go over every feature given in your portolfio. It's always important to ensure the employer can understand and recognize everything you're capable in 60-90 seconds. 
+
+\section{Design Philosophy}
+The design of the portfolio website is centered around a game developer theme. This includes the use of playful and tech-focused fonts, game-related icons and emojis, and a dark and light section contrast to create visual interest. The design aims to balance professionalism with creativity, reflecting my skills and interests in game development. I also wanted to ensure there are some animations in the website (Testimonials Form). This adds an extra bit of inter activeness in your website. Extremely static websites would be considered a little amateur, and also look too boring. It's important to find the perfect balance between minimalism and interactivity. 
+
+\section{Accessibility}
+The website is fully responsive, ensuring it looks and functions well on various devices, from desktops to mobile phones. It's important to ensure there are no bugs in your portfolio website. This is very important, as if a bug occurs when an employer is viewing your portfolio, it may imply unprofessionalism, or he/she might just simply move on to the next candidate. 
+
+\chapter{Implementation}
+\section{Tools and Technologies Used}
+The development of the portfolio website uses several tools and commonly used technologies:
+\begin{itemize}
+    \item \textbf{HTML5}: The structure and content of the website. It's the most commonly used markup language in websites, and also the easiest. There are multiple online resources available for absolutely free, which made me choose HTML. 
+    \item \textbf{CSS3}: Styling and layout, including flexbox and grid for responsive design. CSS helps you make more custom UI elements, and add more depth to them. I was able to use CSS to add animations, change fonts, add images, etcetera. 
+    \item \textbf{JavaScript}: JavaScript is a fast, high level programming language which can be used to code your backend in websites. It was also used to add animations and interactivity to my portfolio.
+    \item \textbf{GitHub}: Version control and hosting the repository. It's free and easy to use. Which is why GitHub was my primary choice.
+    \item \textbf{Visual Studio Code}: VS Code is a lightweight code editor, which provides extremely good plugins and autocomplete features. 
+\end{itemize}
+
+\section{Front-End Development}
+The front-end development focuses on creating a visually appealing and functional interface. I also wanted to ensure it maintains a minimalistic theme. You will notice that the website is just a single page, almost like a resume, and contains extremely simple UI elements. This is to ensure not too much effort is needed in navigating through the portfolio. My rule was to also ensure the website can be looked through in 60 seconds. I certainly believe that goal was achieved in this case. 
+\begin{itemize}
+    \item \textbf{Header and Navigation}: A sticky header that transitions smoothly as the user scrolls. This is a feature that can commonly be seen to ensure the user can quickly go back to different sections. It also makes your webpage look more dynamic. If everything was static, it would look more like a PDF Resume, than a website. 
+    \item \textbf{Sections}: Clearly defined sections for education, certifications, experience, projects, skills, and testimonials. This ensures the user can navigate through different sections with ease. 
+    \item \textbf{Animations}: Smooth transitions and hover effects to enhance the user experience. This was done so that my page didn't look outdated.
+\end{itemize}
+
+\section{Back-End Considerations}
+The only backend that has been implemented in this website for now is JavaScript. The animations, and testimonials are completely handled by JavaScript. Room for improvement is definitely present with the contact form. Using powerful APIs, contact form handling can also be implemented with a few lines of code. 
+
+\chapter{JavaScript Code Explanation}
+
+Given below is a high level explanation of the JavaScript code. Code snippets are added wherever possible. 
+
+\section{Testimonials Management}
+I first define all the testimonials in a const array. This ensure I can easily access each review using indexes. Using proper data structures is important to facilitate ease of access.
+\begin{lstlisting}
+const testimonials = [
+    {
+        name: "fabian_pla",
+        country: "Germany",
+        text: "I have already placed an order with him several times..."
+        rating: 5,
+        time: "3 weeks ago"
+    },
+    {
+        name: "ani_mation12345",
+        country: "United States",
+        text: "Varnos_Games went above and beyond helping me with ...",
+        rating: 5,
+        time: "1 month ago"
+    },
+    {
+        name: "marwanrahimi478",
+        country: "Bahrain",
+        text: "He's one of the best online tutor and game ...",
+        rating: 5,
+        time: "2 months ago"
+    },
+    {
+        name: "alexandruap06",
+        country: "Romania",
+        text: "He was very professional, detail-oriented...",
+        rating: 5,
+        time: "2 months ago"
+    },
+    {
+        name: "jeetcet",
+        country: "Canada",
+        text: "Working with varnos has been a fantastic...",
+        rating: 5,
+        time: "2 months ago"
+    }
+];
+\end{lstlisting}
+
+A variable, \texttt{currentTestimonialIndex}, is initialized to keep track of the currently displayed testimonial.
+
+\begin{lstlisting}
+let currentTestimonialIndex = 0;
+\end{lstlisting}
+
+Next, two variables are created to reference the HTML elements where the testimonial text will be displayed.
+
+\section{Updating Testimonials}
+The \texttt{updateTestimonial} function updates the testimonial text displayed. As explained before, it is easily done by just referring to the index numbers. 
+
+
+\section{Changing Testimonials}
+
+The \texttt{changeTestimonial} function changes the displayed testimonial based on the button clicked (left or right). It first sets the opacity and transforms (moves) properties to create a transition effect, then updates the
+
+\texttt{currentTestimonialIndex}, calls \texttt{updateTestimonial} to display the new testimonial, and then restores the opacity and transform properties. This creates a smooth animation when the left or right buttons are clicked. 
+
+\section{Event Listeners for Buttons}
+Event listeners are added to the left and right buttons to change the testimonial when clicked. Events are added to buttons to ensure a particular function is executed when it's clicked. This can be seen in action here:- 
+
+\begin{lstlisting}
+document.getElementById('left-button').addEventListener('click', () => {
+    changeTestimonial('left');
+});
+
+document.getElementById('right-button').addEventListener('click', () => {
+    changeTestimonial('right');
+});
+\end{lstlisting}
+
+The \texttt{updateTestimonial} function is called initially to display the first testimonial.
+
+\begin{lstlisting}
+updateTestimonial();
+\end{lstlisting}
+
+\section{Header Scroll Effect}
+A variable, \texttt{lastScrollTop}, is initialized to keep track of the last scroll position. The header element is selected using \texttt{document.querySelector}.
+
+\begin{lstlisting}
+let lastScrollTop = 0;
+const header = document.querySelector('header');
+\end{lstlisting}
+
+This script provides the functionality for the testimonial section and implements a scroll-based visibility feature for the header, enhancing the overall user experience of the portfolio website. It also implements animations to ensure smooth transitions between different testimonials. 
+
+
+\chapter{Strengths and Weaknesses}
+
+\section{Strengths}
+
+The portfolio website has several strengths:
+
+\begin{itemize}
+
+    \item \textbf{Design}: A minimalist design that can easily reflect my professional skills.
+    \item \textbf{Responsiveness}: The website is fully responsive, ensuring accessibility across different devices.
+    \item \textbf{Content Organization}: Clear and well-organized sections that provide a clean overview of my professional journey.
+    \item \textbf{Interactivity}: Use of animations and transitions to create an engaging user experience.
+
+\end{itemize}
+
+\section{Weaknesses}
+Despite its strengths, the portfolio has some weaknesses:
+
+\begin{itemize}
+
+    \item \textbf{Static Content}: Currently, the website has static content that requires manual updates. This is obviously not the best practice, as changing elements/data would require more effort than usual. 
+    \item \textbf{Limited Back-End Functionality}: The absence of a back-end server limits the potential for dynamic content and user interactions. It also has a placeholder contact form, which can be improved upon if a backend server existed to store data.
+
+\end{itemize}
+
+\section{Future Improvements}
+To improve the portfolio, the following features and enhancements are planned:
+
+\begin{itemize}
+
+    \item \textbf{Dynamic Content}: Integrating a back-end server to manage and display dynamic content, and to also handle contact forms.
+    \item \textbf{SEO}: Implementing SEO(Search Engine Optimization) to increase the website's visibility in search engine results. Since my name is unique, it would also be easy for my website to standout when searching for my name. 
+    \item \textbf{Better Animations}: The website currently has extremely basic animations. I would like to learn more about creating better animations, which would make my website more interative.
+    \item \textbf{Simple Game}: I'd like to implement a simple game in the 
+    future, since my background in IT is mostly Game Development based.
+
+\end{itemize}
+
+\chapter{Conclusion}
+
+The development of my computer science portfolio website has been a great learning experience. It has allowed me to apply my skills in web development, design, and content organization. I always found web development to be quite overwhelming, since one has to learn multiple different technologies. But this pushed me out of my comfort zone, and helped me learn more about how websites are normally built.
+
+The portfolio  showcases my professional journey and serves as a platform for potential employers and collaborators to learn more about my work. While there are areas for improvement, the current version of the portfolio achieves its primary objectives and provides a solid foundation for future enhancements.
+
+\chapter{References and Learning Materials}
+\begin{itemize}
+    \item \href{https://www.youtube.com/watch?v=kUMe1FH4CHE}
+    {FreeCodeCamp HTML Course}
+    
+    \item \href{https://www.youtube.com/watch?v=OXGznpKZ_sA}
+    {FreeCodeCamp CSS Course}
+    
+    \item \href{https://www.youtube.com/watch?v=yQaAGmHNn9s&list=PL46F0A159EC02DF82}
+    {TheNewBoston JavaScript Course Playlist}
+    
+    \item \href{https://websitedesigners.com/blog/power-of-minimalistic-web-design/}
+    {Research on Minimalistic Websites}
+    
+\end{itemize}
+
+\end{document}
